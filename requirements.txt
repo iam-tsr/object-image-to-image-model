@@ -1,0 +1,8 @@
+flask
+flask-cors
+python-dotenv
+langchain-google-genai
+langchain
+huggingface-hub
+gunicorn
+Pillow
