@@ -16,6 +16,12 @@
 
 ---
 
+### Run Cmd
+
+$ flask run
+
+---
+
 ### Postman Query
 
 Body -> form-data
