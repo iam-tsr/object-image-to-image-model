@@ -5,6 +5,8 @@ import os
 import json
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 main_bp = Blueprint('main', __name__)
 
 # Configuration
@@ -106,7 +108,6 @@ def upload_data():
                 'text': text
             }), 500
         
-        logging.info("Data upload and processing completed successfully.")
 
         return jsonify({
             'message': compression_message,
@@ -115,12 +116,6 @@ def upload_data():
             'model_result': 'Image Generated Successfully'
         }), 200
     
+    logging.info("Data upload and processing completed successfully.")
+    
     return jsonify({'error': 'Invalid file format. Only JPG files allowed'}), 400
-
-# @main_bp.route('/get-data', methods=['GET'])
-# def get_data_endpoint():
-#     return jsonify({
-#         'image_path': data_store.image_path,
-#         'text_data': data_store.text_data
-#     }), 200
-

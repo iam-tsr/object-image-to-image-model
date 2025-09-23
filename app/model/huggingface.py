@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 from app.model.prompt import gen_prompt
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 load_dotenv()
 
 def image_editing():
@@ -33,6 +35,7 @@ def image_editing():
         )
 
         image.save(f"{output_dir}/v{interation}.png")
+
     logging.info("Image Generation Done!")
 
 if __name__ == "__main__":

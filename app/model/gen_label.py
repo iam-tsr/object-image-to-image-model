@@ -4,6 +4,8 @@ from app.main.config import process_data
 import warnings
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 load_dotenv()
 
 def generate_place_label():
