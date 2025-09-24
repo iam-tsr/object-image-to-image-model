@@ -8,6 +8,10 @@
 
 ---
 
+![usage-example](tests/usage-example.jpg)
+
+---
+
 ### API Endpoints
 
 - ``` GET /health ``` - Check if the server is functioning properly.
