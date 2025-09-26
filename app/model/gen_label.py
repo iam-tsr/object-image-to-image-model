@@ -4,6 +4,8 @@ from app.main.config import process_data
 import warnings
 import logging
 
+warnings.filterwarnings("ignore")
+
 logging.basicConfig(level=logging.INFO)
 
 load_dotenv()
@@ -31,6 +33,5 @@ def generate_place_label():
     return result
 
 if __name__ == "__main__":
-    warnings.filterwarnings("ignore")
     label = generate_place_label()
     print(f"Generated Label: {label}")
