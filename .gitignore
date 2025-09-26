@@ -3,7 +3,6 @@ venv/
 data/
 .env
 __pycache__/
-planning/
 *.pyc
 *.pyo
 *.pyd
