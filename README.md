@@ -6,9 +6,7 @@
 
 **Object** - The plan activity of the user (eg. Cricket, Movie, Shopping, etc.)
 
----
-
-![usage-example](tests/usage-example.jpg)
+![usage-example](planning/usage-example.jpg)
 
 ---
 
@@ -17,6 +15,12 @@
 - ``` GET /health ``` - Check if the server is functioning properly.
 
 - ``` POST /upload ``` - Here user have to give their inputs.
+
+---
+
+### Workflow
+
+![workflow](planning/workflow.jpg)
 
 ---
 
