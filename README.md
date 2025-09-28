@@ -27,10 +27,10 @@
 ### Environment Setup
 
 ```bash
-cp .env.example .env
+$ cp .env.example .env
 ```
 
-```bash
+```python
 GOOGLE_API_KEY=your_google_api_key
 
 HF_TOKEN=your_huggingface_token
