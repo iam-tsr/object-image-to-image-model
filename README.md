@@ -24,6 +24,21 @@
 
 ---
 
+### Environment Setup
+
+```bash
+cp .env.example .env
+```
+
+```bash
+GOOGLE_API_KEY=your_google_api_key
+
+HF_TOKEN=your_huggingface_token
+```
+Make sure you have granted the 'Make calls to Inference Providers' privilege to your access tokens generated through HF.
+
+---
+
 ### Run Cmd
 
 $ flask run
