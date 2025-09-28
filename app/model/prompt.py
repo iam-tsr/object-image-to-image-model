@@ -12,6 +12,7 @@ def gen_prompt():
 
     Generate an image of a person doing "{event}" at {place}.
     The image should be in a realistic style with high detail and vibrant colors.
+    Try to match the person's appearance as possible to the provided image but clothing can be varied, depends on the {place}.
 
     """
 
