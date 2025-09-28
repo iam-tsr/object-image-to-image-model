@@ -1,5 +1,5 @@
 from app.main.config import process_data
-from app.model.gen_label import generate_place_label
+from app.model.label_gen import generate_place_label
 
 
 def gen_prompt():
