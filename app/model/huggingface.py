@@ -21,7 +21,7 @@ def image_editing():
     output_dir = "./data/generated_image"
 
     client = InferenceClient(
-        provider="auto",
+        provider="fal-ai",
         api_key=os.environ["HF_TOKEN"],
     )
 
@@ -32,8 +32,8 @@ def image_editing():
         image = client.image_to_image(
             user_image,
             prompt=image_prompt,
-            model="black-forest-labs/FLUX.1-Kontext-dev",
-            target_size=ImageToImageTargetSize(width=512, height=512),
+            model="Qwen/Qwen-Image-Edit",
+            target_size = {"height": 1024, "width": 1024},
         )
 
         image.save(f"{output_dir}/v{interation}.png")
